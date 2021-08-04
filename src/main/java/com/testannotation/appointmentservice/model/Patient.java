@@ -6,7 +6,7 @@ public class Patient {
     private String firstName;
     private String lastName;
     private String dateOfBirth;
-    private String dateOfRegistration;
+    private String registrationDate;
 
     public String getMRN() {
         return MRN;
@@ -40,12 +40,12 @@ public class Patient {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getDateOfRegistration() {
-        return dateOfRegistration;
+    public String getRegistrationDate() {
+        return registrationDate;
     }
 
-    public void setDateOfRegistration(String dateOfRegistration) {
-        this.dateOfRegistration = dateOfRegistration;
+    public void setRegistrationDate(String registrationDate) {
+        this.registrationDate = registrationDate;
     }
 
     public String getAddress() {
@@ -62,20 +62,20 @@ public class Patient {
 
     }
 
-    public Patient(String firstName, String lastName, String dateOfBirth, String dateOfRegistration, String address) {
+    public Patient(String firstName, String lastName, String dateOfBirth, String registrationDate, String address) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
-        this.dateOfRegistration = dateOfRegistration;
+        this.registrationDate = registrationDate;
         this.address = address;
     }
 
-    public Patient(String firstName, String lastName, String MRN, String dateOfBirth, String dateOfRegistration, String address) {
+    public Patient(String firstName, String lastName, String MRN, String dateOfBirth, String registrationDate, String address) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.MRN = MRN;
         this.dateOfBirth = dateOfBirth;
-        this.dateOfRegistration = dateOfRegistration;
+        this.registrationDate = registrationDate;
         this.address = address;
     }
 

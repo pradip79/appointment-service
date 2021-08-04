@@ -50,7 +50,7 @@ public class AppointServiceIntegrationTestWiremock {
         //Then
         then(response.getStatusCode().equals(200));
         then(response.getBody().getMRN().equals(MRN));
-        then(response.getBody().getDateOfRegistration().equals("04/12/2009"));
+        then(response.getBody().getRegistrationDate().equals("04/12/2009"));
     }
 
 }
